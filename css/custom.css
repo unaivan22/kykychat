@@ -1,0 +1,735 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : Awaiken
+* Template Name : ULaunch - Multi Purpose Products Landing Page
+* File          : CSS File
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+/* INDEX
+----------------------------------------------------------------------------------------
+01. General css
+02. Navigation area css
+03. Slider area css
+04. About area css
+05. Services area css
+06. Video area css
+07. Features area css
+08. Pricing area css
+09. FAQs area css
+10. Testimonial area css
+11. Counter area css
+12. Newsletter area css
+13. Contact us area css
+14. Footer area css
+15. Media Screens
+-------------------------------------------------------------------------------------- */
+
+/************************************/
+/***** 	   01. General css		 ****/
+/************************************/
+@font-face {
+	font-family: 'SF-Pro-Display-Regular';
+	src: url('../fonts/typeface/SF-Pro-Display-Regular.otf');
+}
+@font-face {
+	font-family: 'SF-Pro-Display-Medium';
+	src: url('../fonts/typeface/SF-Pro-Display-Medium.otf');
+}
+@font-face {
+	font-family: 'SF-Pro-Display-Bold';
+	src: url('../fonts/typeface/SF-Pro-Display-Bold.otf');
+}
+
+/* @font-face {
+	font-family: 'Lemon-Milk-Regular';
+	src: url('../assets_eastmovin/fonts/LEMONMILK-Regular.otf');
+} */
+
+
+body{
+	font-size: 16px;
+	font-family: 'SF-Pro-Display-Regular', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+body.on-side{
+	margin-left: 0;
+}
+
+h1,
+h2,
+h3{
+	margin-top:0;
+	font-weight: 700;
+}
+
+img{
+	max-width: 100%;
+}
+
+a:hover{
+	text-decoration: none;
+	outline: 0;
+}
+
+a:focus{
+	text-decoration: none;
+	outline: 0;
+}
+
+.preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	background: #1151d3;
+	z-index: 9999;
+}
+
+.loader{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	border: 4px solid #Fff;
+	top: calc(50% - 15px);
+	animation: loader 2s infinite ease;
+}
+
+.loader-inner{
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	background-color: #fff;
+	animation: loader-inner 2s infinite ease-in;
+}
+
+/************************************/
+/***** 02. Navigation area css  *****/
+/************************************/
+
+.wrap-sticky{
+	height: auto !important;
+}
+
+body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
+	left: 0;
+}
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.navbar-brand{
+	padding: 18px 15px;
+	height: auto;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+}
+
+.navbar-brand img{
+	transition: all 0.3s;
+}
+
+nav.navbar.bootsnav{
+	background: none;
+	border-radius: 0;
+	border-bottom: 1px solid rgba(255,255,255,0);
+	z-index: 101;
+	padding: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+}
+
+.navbar-nav li{
+	padding: 30px 0;
+	margin:0 2px;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+}
+
+.nav li{
+    position: relative;
+}
+
+.navbar-default .navbar-nav>li>a{
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 0.05em;
+	padding: 8px 10px 4px; 
+	position: relative;
+	border: 1px solid transparent;
+}
+
+.attr-nav > ul > li > a{
+	padding: 32px 15px 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav ul{
+	display: none;
+	padding: 0;
+	min-width: 214px;
+	list-style: none;
+    position: absolute;
+	top: 100%;
+	left: 0;
+	background: #16c9f6;
+	background: linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+	background: -webkit-linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+	background: -moz-linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+	background: -o-linear-gradient(to left, #3ccdbb 0%, #16c9f6 100%);
+	margin-top: 0px;
+}
+
+.nav ul li{
+	transition: all 0.4s;
+	margin: 0;
+}
+
+.nav ul li:hover{
+	background: rgba(255,255,255,0.14);
+}
+
+.nav ul li a:hover{
+	color: #000;
+}
+
+.nav ul li a{
+	border: none !important;
+}
+
+.nav .active a{
+	background: none !important;
+	color: #ffc600 !important;
+	transition: all 0.3s;
+}
+
+.nav ul li a{
+	display: block;
+	color: #fff;
+	padding: 12px 20px;
+}
+
+.nav .active ul li a{
+	border: none !important;
+}
+
+.nav ul ul{
+	left: 100%;
+	top: 0;
+	margin-top: -1px;
+}
+
+.nav ul li{
+	padding: 0;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.nav ul li:last-child{
+	border-bottom: none;
+}
+
+.wrap-sticky nav.navbar.bootsnav{
+	position: fixed;
+}
+
+.wrap-sticky nav.navbar.bootsnav.sticked{
+	background: transparent;
+	border-bottom: 1px solid rgba(255,255,255,0.05);
+	transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.sticked .navbar-brand{
+	padding: 12px 15px;
+}
+
+.sticked .attr-nav > ul > li > a{
+	padding-top: 24px;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color: #000;
+}
+
+.navbar-default .navbar-nav>li>a:focus{
+	color: #fff;
+}
+
+.side{
+	background: #333;
+	padding: 0;
+}
+
+.side .close-side{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+.side .widget ul.link li a{
+	display: block;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 12px 20px 12px 40px;
+	border-bottom: 1px dashed #3c3c3c;
+	position: relative;
+}
+
+.side .widget ul.link li a:before{
+	content: '';
+	display: block;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #9f9f9f;
+	border-radius: 50%;
+	position: absolute;
+	left: 20px;
+	top: 18px;
+}
+
+.side .widget ul.link li a:hover:before{
+	border-color: #fff;
+}
+
+/************************************/
+/*****   03. Slider area css    *****/
+/************************************/
+
+.banner{
+	position: relative;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	/* background: #1151d3 url(../images/banner-pattern.png) no-repeat center center; */
+	background-color: #F5F5F7;
+	padding: 160px 0 0;
+	/* margin-bottom: 240px; */
+	height: 100vh;
+}
+
+.banner .row{
+	position: relative;
+	z-index: 1;
+}
+
+.header-content{
+	text-align: center;
+}
+
+.header-content h3{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 500;
+	color: #000;
+}
+
+.header-content h2{
+	font-size: 30px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+
+.header-content h2 span{
+	font-weight: 700;
+}
+
+.btn-download-group{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.btn-download{
+	position: relative;
+    display: inline-block;
+    color: #232322;
+    background: #fff;
+    padding: 8px 20px 6px 60px;
+	border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    min-width: 190px;
+    margin: 10px 6px;
+    text-align: left;
+    transition: all 0.3s linear;
+}
+
+.btn-download i{
+	font-size: 32px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.btn-download span{
+	font-size: 10px;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.btn-download:hover{
+	background: #232322;
+	color: #fff;
+}
+
+.header-image{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: -240px;
+}
+
+.banner .header-content .sub-header {
+	font-weight: 400;
+	color: #4F4F4F;
+}
+
+.header-image img{
+	width: 300px;
+}
+
+.banner .header-image{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 50px auto;
+}
+
+.banner .form-group input{
+	width: 21.2rem;
+	display: inline-block;
+    height: 4rem;
+}
+
+.banner .btn{
+	background-color: #F2C94C;
+	color: #4F4F4F;
+	border: none;
+	font-weight: 600;
+	padding: 1rem 8.4rem;
+}
+
+.banner .form-control {
+	border: 1px solid #E4E6EF !important;
+}
+
+/************************************/
+/*****   04. About area css     *****/
+/************************************/
+
+.section-title{
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.section-title p{
+	text-transform: uppercase;
+	color: #1151d3;
+	font-size: 18px;
+	font-weight: 500;
+	padding-top: 2px;
+}
+
+.section-title h2{
+	font-size: 30px;
+	color: #232322;
+	font-weight: 600;
+	line-height: 1.2em;
+	font-family: 'SF-Pro-Display-Bold';
+}
+
+.about{
+	padding: 100px 0 50px;
+}
+
+.about .section-title{
+	text-align: right;
+}
+
+/*************************************/
+/*****   05. Services area css   *****/
+/*************************************/
+
+/*************************************/
+/*****     06. Video area css    *****/
+/*************************************/
+
+/*************************************/
+/*****   07. Features area css   *****/
+/*************************************/
+
+.features{
+	background: #eff6ff;
+	padding: 100px 0 0 0;
+}
+
+.screenshot-slider{
+	padding: 80px 0;
+	text-align: center;
+}
+
+.screenshot-slider .swiper-slide-active figure img{
+	transform: scale(1.20);
+	box-shadow: -4px 5px 40px 4.56px rgba(0, 0, 0, 0.13);
+}
+
+.swiper-slide-right-text{
+	margin-top: 80px;
+}
+
+.swiper-slide-right-text h3{
+	color: #525251;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 1em;
+}
+
+.swiper-slide-right-text p{
+	color: #9b9b9b;
+	font-size: 16px;
+	line-height: 1.6em;
+}
+
+.screenshot-button-prev,
+.screenshot-button-next{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background: #1151d3;
+	color: #fff;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-right: 8px;
+	transition: all 0.3s ease-in-out;
+}
+
+.screenshot-button-prev:hover,
+.screenshot-button-next:hover{
+	background: #232322;
+}
+
+img.get-it {
+	width: 180px;
+	margin: 20px 0 100px 0;
+}
+
+.features .section-title{
+	margin-bottom: 0;
+}
+
+/*************************************/
+/*****   08. Pricing area css    *****/
+/*************************************/
+
+/*************************************/
+/*****     09. FAQs area css     *****/
+/*************************************/
+
+/********************************************/
+/*****     10. Testimonial area css     *****/
+/********************************************/
+
+.testimonial-pagination{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.testimonial-pagination .swiper-pagination-bullet{
+	width: 14px;
+	height: 14px;
+	border: 2px solid #1151d3;
+	background: none;
+	opacity: 1;
+}
+
+.testimonial-pagination .swiper-pagination-bullet-active{
+	background: #1151d3;
+}
+
+/*************************************/
+/*****   11. Counter area css    *****/
+/*************************************/
+
+.counter{
+	padding: 100px 0;
+}
+
+/****************************************/
+/*****   12. Newsletter area css    *****/
+/****************************************/
+
+/****************************************/
+/*****   13. Contact us area css    *****/
+/****************************************/
+
+/************************************/
+/*****   14. Footer area css    *****/
+/************************************/
+
+footer{
+	padding: 0 0 100px;
+	background: #232322;
+	text-align: center;
+	
+}
+
+.footer-menu{
+	margin-bottom: 20px;
+}
+
+.footer-menu ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.footer-menu ul li{
+	display: inline-block;
+}
+
+.footer-menu ul li a{
+	display: block;
+	color: #9b9b9b;
+	padding: 0 8px;
+	transition: all 0.3s ease-in-out;
+}
+
+.footer-menu ul li a:hover{
+	color: #fff;
+}
+
+.footer-about p{
+	color: #626161;
+	font-size: 12px;
+}
+
+.footer-site-info{
+	margin-top: 30px;
+}
+
+.footer-site-info p{
+	color: #626161;
+	font-size: 12px;
+}
+
+/************************************/
+/*****    15. Media Screens     *****/
+/************************************/
+
+@media only screen and (max-width: 991px){
+	nav.navbar.bootsnav .navbar-header{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	nav.navbar.bootsnav .navbar-brand{
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.side-menu img{
+		width: 108px;
+	}
+	
+	.section-title{
+		margin-bottom: 50px;
+	}
+	
+	.section-title h2{
+		font-size: 22px;
+	}
+	
+	.section-title p{
+		font-size: 14px;
+	}
+	
+	.about{
+		padding: 80px 0 40px;
+	}
+	
+	.features{
+		padding: 80px 0;
+	}
+	
+	.counter{
+		padding: 80px 0 50px;
+	}
+	
+	.screenshot-slider{
+		padding: 40px 0;
+	}
+	
+	.screenshot-slider .swiper-slide-active figure img{
+		transform: scale(1);
+	}
+	
+	.swiper-slide-right-text{
+		margin-top: 40px;
+		text-align: center;
+	}
+	
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 767px){
+	nav.navbar.bootsnav .navbar-brand{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	.header-content h2{
+		font-size: 26px;
+	}
+
+	.header-content h2 br{
+		display: none;
+	}
+	
+	.btn-download{
+		display: block;
+		width: 190px;
+		margin: 10px auto;
+	}
+	
+	.about .section-title{
+		text-align: center;
+	}
+
+	.section-title h2{
+		font-size: 20px;
+	}
+	
+	.about{
+		padding: 60px 0 30px;
+	}
+	
+	.features{
+		padding: 60px 0;
+	}
+	
+	footer{
+		padding: 0 0 60px;
+	}
+	
+	.counter{
+		padding: 60px 0 30px;
+	}
+	
+	.swiper-slide-right-text h3{
+		font-size: 24px;
+	}
+}
